@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* changing primary button color */
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+	background-color: #f3b340;
+	border-color: rgba(243, 180, 64, 0.692);
+}
+
+.btn-primary:hover {
+	background-color: #e66a2c;
+	border-color: #e66a2c;
+}
+
+/* changing secondary button color */
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus {
+	background-color: #364c63;
+	border-color: #364c63;
+}
+
+.btn-secondary:hover {
+	background-color: #e66a2c;
+	border-color: #e66a2c;
+}
+
+html,
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #f4f3ef;
+	background-color: #c5cbd3;
+}
+
+.bgcolor-nav {
+	background-color: #364c63;
+}
+
+.bg-gradiant {
+	background: linear-gradient(0deg, rgba(197, 203, 211, 1) 0%, rgba(3, 3, 3, 1) 100%);
+}
+
+nav a {
+	color: #f4f3ef;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #f4f3ef;
+}
+
+.backgroundPicture {
+	background-image: url(./images/header2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.col-7 {
+	padding-top: 3vw;
+}
+
+.slider-header {
+	background-color: #364c63;
+	font-size: 1.5em;
+	border-radius: 10px 30px;
+	padding: 5px 20px;
+	margin-bottom: 5px;
+}
+
+.glider-next {
+	right: -50px;
+	top: 50%;
+}
+
+.glider-prev {
+	left: -50px;
+	top: 50%;
+}
+
+.glider-contain {
+	width: 80% !important;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+.card-container {
+	width: 235px;
+	height: 470px;
+	background-color: #f3b340;
+	border-radius: 15px 50px;
+}
+
+.category-container {
+	width: 235px;
+	height: 275px;
+	background-color: #8cbcb9;
+	border-radius: 15px 50px;
+}
+
+.socialmedia-icon {
+	transition: 0.2s;
+	font-size: 40px;
+	color: #f4f3ef;
+}
+
+.socialmedia-icon:hover {
+	text-decoration: none;
+	font-size: 50px;
+}
+/*---Media Queries --*/
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+	.col-7 .maintext {
+		font-size: 32px;
+	}
+	.col-7 .desctext {
+		font-size: 13px;
+	}
+}
+@media (min-width: 576px) {
+	.col-7 .maintext {
+		font-size: 5vw;
+	}
+	.col-7 .desctext {
+		font-size: 2vw;
+	}
+
+	.col-7 {
+		padding-left: 22vw;
+	}
+}

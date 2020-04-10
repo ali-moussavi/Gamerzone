@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/650e805292.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../index.css">
+
+    <title>Controllers</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div>
+        <nav class="navbar navbar-expand-md navbar-dark bgcolor-nav py-1 px-1 sticky-top">
+            <a class="navbar-brand p-0" href="../index.html">
+                <img src="../images/logo2.PNG" height="60" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="./allProducts.html">All Products</a>
+                            <a class="dropdown-item" href="./videoGames.html">Video Games</a>
+                            <a class="dropdown-item" href="./gamingConsoles.html">Gaming Consoles</a>
+                            <a class="dropdown-item" href="./headphones.html">Headphones and Headsets</a>
+                            <a class="dropdown-item" href="./tshirts.html">T-shirts</a>
+                            <a class="dropdown-item" href="./keyboards.html">Keyboards and Mouse</a>
+                            <a class="dropdown-item" href="./controllers.html">Controllers</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-auto">
+                <span style="font-size: 30px;">
+                    <a href="#" class="fas fa-user fa-xs p-2"></a>
+                    <a href="#" class="fas fa-shopping-cart fa-xs p-2"></a>
+                </span>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Products for this category -->
+    <div class="container my-5" style="max-width: 100vw;">
+        <div class="row" style="padding-left: 10%; padding-bottom: 7px; margin-top: 60px;">
+            <div class="slider-header">Controllers</div>
+        </div>
+
+
+        <div id="prodList" class="container d-flex justify-content-around flex-wrap" style="max-width: 100vw;">
+            <!-- List of products -->
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bgcolor-nav">
+        <div class="container p-4">
+            <div class="row my-3">
+                <div class="col-12">
+                    <form class="d-flex flex-row justify-content-center">
+                        <input style="max-width: 700px;" type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Enter your Email to subscribe our news letter">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-3 pt-3">
+                <div class="col-12 col-md-6 col-xl-3 justify-content-center mb-5">
+                    <h4 class="text-center">About Us</h4>
+                    <div class="py-1 text-center">Community</div>
+                    <div class="py-1 text-center">Jobs</div>
+                    <div class="py-1 text-center">Shipping</div>
+                    <div class="py-1 text-center">Contact Us</div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 justify-content-center mb-5">
+                    <h4 class="text-center">Customer Care</h4>
+                    <div class="py-1 text-center">Privacy Policy</div>
+                    <div class="py-1 text-center">Shipping and Deivery</div>
+                    <div class="py-1 text-center">Help Center</div>
+                    <div class="py-1 text-center">Returns and Exchanges</div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-5">
+                    <h4 class="text-center">Our Services</h4>
+                    <div class="py-1 text-center">Free Shipping</div>
+                    <div class="py-1 text-center">Free Returns</div>
+                    <div class="py-1 text-center">Our Franchising</div>
+                    <div class="py-1 text-center">Terms and Conditions</div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-5">
+                    <h4 class="text-center">Information</h4>
+                    <div class="py-1 text-center">Payment Methods</div>
+                    <div class="py-1 text-center">Time and Shipping Costs</div>
+                    <div class="py-1 text-center">Shipping Methods</div>
+                    <div class="py-1 text-center">Product Returns</div>
+                </div>
+            </div>
+            <!-- Social media icons -->
+            <div class="row justify-content-between mx-auto" style="max-width: 800px;">
+                <a href="#" class="socialmedia-icon fab fa-instagram"></a>
+                <a href="#" class="socialmedia-icon fab fa-twitter"></a>
+                <a href="#" class="socialmedia-icon fab fa-facebook-square"></a>
+                <a href="#" class="socialmedia-icon fab fa-pinterest-square"></a>
+                <a href="#" class="socialmedia-icon fab fa-youtube"></a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script type="module" src="./controllers.js"></script>
+</body>
+
+</html>
