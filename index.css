@@ -33,7 +33,7 @@ html,
 body {
 	font-family: 'Poppins', sans-serif;
 	color: #f4f3ef;
-	background-color: #c5cbd3;
+	background-color: #eaeaea;
 }
 
 .bgcolor-nav {
@@ -41,7 +41,7 @@ body {
 }
 
 .bg-gradiant {
-	background: linear-gradient(0deg, rgba(197, 203, 211, 1) 0%, rgba(3, 3, 3, 1) 100%);
+	background: linear-gradient(0deg, rgba(234, 234, 234, 1) 0%, rgba(3, 3, 3, 1) 100%);
 }
 
 nav a {
@@ -90,7 +90,7 @@ nav a {
 .card-container {
 	width: 235px;
 	height: 470px;
-	background-color: #f3b340;
+	background-color: white;
 	border-radius: 15px 50px;
 }
 
@@ -105,6 +105,14 @@ nav a {
 	transition: 0.2s;
 	font-size: 40px;
 	color: #f4f3ef;
+}
+
+.subscribe-form {
+	border-radius: 4px 0px 0px 4px;
+}
+
+.subscribe-btn {
+	border-radius: 0px 4px 4px 0px;
 }
 
 .socialmedia-icon:hover {

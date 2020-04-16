@@ -23,6 +23,41 @@
 </head>
 
 <body>
+    <!-- Modal for contact us -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel" style="color: #364c63;">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="formGroupExampleInput"
+                            placeholder="Your Email Addres">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput"
+                            placeholder="Your Phone Number (Optional)">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Type your message here..."></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <div>
         <nav class="navbar navbar-expand-md navbar-dark bgcolor-nav py-1 px-1 sticky-top">
@@ -57,7 +92,7 @@
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -90,39 +125,39 @@
             <div class="row">
                 <div class="col-12 col-md-4">
                     <div style="margin: 15px;" class="d-flex justify-content-center">
-                        <div class=" d-flex flex-column justify-content-center">
+                        <div class=" d-flex flex-column justify-content-center" style="color: #f43345;">
                             <div class="d-flex justify-content-center mx-auto pb-1 pt-4 text-center"
                                 style="width: 80%;">
                                 <i class="fas fa-shipping-fast" style="width: 100%; font-size: 80px;"></i>
                             </div>
                             <div class="pt-2 mx-auto font-weight-bold text-center"
-                                style="color: #f4f3ef; font-size: 1.3em; width: 80%;">Free Shipping
+                                style="font-size: 1.3em; width: 80%;">Free Shipping
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
                     <div style="margin: 15px;" class="d-flex justify-content-center">
-                        <div class=" d-flex flex-column justify-content-center">
+                        <div class=" d-flex flex-column justify-content-center" style="color: #8b4986;">
                             <div class="d-flex justify-content-center mx-auto pb-1 pt-4 text-center"
                                 style="width: 80%;">
                                 <i class="fas fa-headset" style="width: 100%; font-size: 80px;"></i>
                             </div>
                             <div class="pt-2 mx-auto font-weight-bold text-center"
-                                style="color: #f4f3ef; font-size: 1.3em; width: 80%;">Online Support 24/7
+                                style=" font-size: 1.3em; width: 80%;">Online Support 24/7
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
                     <div style="margin: 15px;" class="d-flex justify-content-center">
-                        <div class=" d-flex flex-column justify-content-center">
+                        <div class=" d-flex flex-column justify-content-center" style="color: #07888a;">
                             <div class="d-flex justify-content-center mx-auto pb-1 pt-4 text-center"
                                 style="width: 80%;">
                                 <i class="fas fa-hand-holding-usd" style="width: 100%; font-size: 80px;"></i>
                             </div>
                             <div class="pt-2 mx-auto font-weight-bold text-center"
-                                style="color: #f4f3ef; font-size: 1.3em; width: 80%;">Money Back Guarantee
+                                style=" font-size: 1.3em; width: 80%;">Money Back Guarantee
                             </div>
                         </div>
                     </div>
@@ -289,9 +324,10 @@
             <div class="row my-3">
                 <div class="col-12">
                     <form class="d-flex flex-row justify-content-center">
-                        <input style="max-width: 700px;" type="email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Enter your Email to subscribe our news letter">
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                        <input style="max-width: 700px;" type="email" class="form-control subscribe-form"
+                            id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter your Email to subscribe our news letter">
+                        <button type="submit" class="btn btn-primary subscribe-btn">Subscribe</button>
                     </form>
                 </div>
             </div>
