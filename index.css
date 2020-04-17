@@ -119,6 +119,16 @@ nav a {
 	text-decoration: none;
 	font-size: 50px;
 }
+
+.category-container > a {
+	transition: 0.2s;
+	color: #364c63;
+}
+
+.category-container > a:hover {
+	text-decoration: none;
+	color: #eaeaea;
+}
 /*---Media Queries --*/
 @media (max-width: 992px) {
 }
