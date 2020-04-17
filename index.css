@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+@keyframes changeColor {
+	0% {
+		color: #f43345;
+	}
+	50% {
+		color: #07888a;
+	}
+	100% {
+		color: #8b4986;
+	}
+}
+
+.icon-animation1 {
+	animation: changeColor 4s ease infinite alternate backwards;
+}
+
+.icon-animation2 {
+	animation: changeColor 4s ease 2s infinite alternate backwards;
+}
+.icon-animation3 {
+	animation: changeColor 4s ease 4s infinite alternate backwards;
+}
+
+.three-icons {
+	padding: 20px;
+	width: 220px;
+	height: 195px;
+	background-color: rgba(255, 255, 255, 0.541);
+	border-radius: 15px 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 /* changing primary button color */
 
 .btn-primary,
