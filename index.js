@@ -38,3 +38,7 @@ function glider() {
 const sliderItmesContainer = document.getElementById('slider-items-container');
 renderMostpopularItems(products, [ 1, 3, 5, 7, 8, 11, 15 ], sliderItmesContainer, '');
 glider();
+
+$(function() {
+	$('[data-toggle="tooltip"]').tooltip();
+});

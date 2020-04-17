@@ -3,11 +3,14 @@ export const createProductCard = (productObj, locationofHTML = '') => {
 	productContainer.style = 'margin: 15px;';
 	productContainer.className = 'd-flex justify-content-center';
 	productContainer.innerHTML = `<div class="card-container shadow d-flex flex-column justify-content-center">
-	<div class="d-flex justify-content-center mx-auto pb-1 pt-4" style="width: 80%;">
-		<img src="${locationofHTML}${productObj.imageurl}" style="width: 100%; border-radius: 5px 15px;" alt="">
+	<div class="d-flex justify-content-center mx-auto pb-1" style="width: 90%; height:190px;">
+		<div class="container-fluid d-flex align-items-center pb-1">
+			<img src="${locationofHTML}${productObj.imageurl}" style="width: 100%;height:auto; border-radius: 5px 15px;" alt="">
+		</div>
 	</div>
-	<div class="pt-2 mx-auto font-weight-bold"
-		style="color: #364c63; font-size: 1.3em; width: 80%;">${productObj.name}</div>
+	<div class="pt-2 mx-auto font-weight-bold product-name" data-toggle="tooltip"
+	data-placement="top" title="${productObj.name}"
+		>${productObj.name}</div>
 	<div class="mx-auto py-2" style="color: #364c63; font-size: 1.1em; width: 80%;">Price : ${productObj.price}$
 	</div>
 	<div class="mx-auto text-center">
