@@ -15,7 +15,7 @@ export const createProductCard = (productObj, locationofHTML = '') => {
 	</div>
 	<div class="mx-auto text-center">
 		<button type="button" class="btn btn-secondary m-2">More Details</button>
-		<button type="button" class="btn btn-success m-2">Add to Cart</button>
+		<button type="button" class="btn btn-primary m-2">Add to Cart</button>
 	</div>
 	</div>`;
 

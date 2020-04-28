@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
-@keyframes changeColor {
+/* @keyframes changeColor {
 	0% {
 		color: #f43345;
 	}
@@ -10,17 +11,32 @@
 	100% {
 		color: #8b4986;
 	}
+} */
+
+.brand-icon {
+	font-size: 2.5em;
+	transform: rotate(-90deg);
+	height: 60px;
+	width: 62.6;
+	color: #f3b340;
+	margin-right: -10px;
+}
+
+.brand-text {
+	font-size: 32px;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 90%;
 }
 
 .icon-animation1 {
-	animation: changeColor 4s ease infinite alternate backwards;
+	color: #2b2a2a;
 }
 
 .icon-animation2 {
-	animation: changeColor 4s ease 2s infinite alternate backwards;
+	color: #2b2a2a;
 }
 .icon-animation3 {
-	animation: changeColor 4s ease 4s infinite alternate backwards;
+	color: #2b2a2a;
 }
 
 .three-icons {
@@ -35,30 +51,32 @@
 /* changing primary button color */
 
 .btn-primary,
-.btn-primary:active,
+.btn-primary:link,
 .btn-primary:visited,
 .btn-primary:focus {
 	background-color: #f3b340;
 	border-color: rgba(243, 180, 64, 0.692);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:active {
 	background-color: #e66a2c;
 	border-color: #e66a2c;
 }
 
 /* changing secondary button color */
 .btn-secondary,
-.btn-secondary:active,
+.btn-secondary:link,
 .btn-secondary:visited,
 .btn-secondary:focus {
-	background-color: #364c63;
-	border-color: #364c63;
+	background-color: #2b2a2a;
+	border-color: #2b2a2a;
 }
 
-.btn-secondary:hover {
-	background-color: #e66a2c;
-	border-color: #e66a2c;
+.btn-secondary:hover,
+.btn-secondary:active {
+	background-color: #363535;
+	border-color: #363535;
 }
 
 html,
@@ -69,7 +87,7 @@ body {
 }
 
 .bgcolor-nav {
-	background-color: #364c63;
+	background-color: #2b2a2a;
 }
 
 .bg-gradiant {
@@ -85,18 +103,38 @@ nav a {
 }
 
 .backgroundPicture {
-	background-image: url(./images/Header2.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(./images/Header2.jpg);
+	/* background-image: url(./images/Header2.jpg); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.header-text {
+	position: absolute;
+	top: 70px;
+	width: 100%;
+}
+
+.bg-black {
+	background-color: rgba(0, 0, 0, 0.603);
+}
+
+.navbar-icons {
+	position: absolute;
+	top: 20px;
+	right: 10px;
 }
 
 .col-7 {
-	padding-top: 3vw;
+	padding-top: 1vw;
 }
 
 .slider-header {
-	background-color: #364c63;
+	background-color: #2b2a2a;
 	font-size: 1.5em;
 	border-radius: 10px 30px;
 	padding: 5px 20px;
@@ -105,7 +143,7 @@ nav a {
 
 .product-name {
 	display: block;
-	color: #364c63;
+	color: #2b2a2a;
 	font-size: 1.3em;
 	width: 80%;
 	white-space: nowrap;
@@ -139,7 +177,7 @@ nav a {
 .category-container {
 	width: 235px;
 	height: 275px;
-	background-color: #8cbcb9;
+	background-color: white;
 	border-radius: 15px 50px;
 }
 
@@ -164,12 +202,12 @@ nav a {
 
 .category-container > a {
 	transition: 0.2s;
-	color: #364c63;
+	color: #2b2a2a;
 }
 
-.category-container > a:hover {
+a:hover {
 	text-decoration: none;
-	color: #eaeaea;
+	color: #828181;
 }
 /*---Media Queries --*/
 @media (max-width: 992px) {
@@ -189,7 +227,7 @@ nav a {
 		font-size: 5vw;
 	}
 	.col-7 .desctext {
-		font-size: 2vw;
+		font-size: 1.75vw;
 	}
 
 	.col-7 {

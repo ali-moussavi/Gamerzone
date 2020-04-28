@@ -42,3 +42,10 @@ glider();
 $(function() {
 	$('[data-toggle="tooltip"]').tooltip();
 });
+
+const navbar = document.getElementById('navbar');
+const navToggler = document.getElementById('navToggler');
+
+navToggler.addEventListener('click', () => {
+	navbar.classList.toggle('bg-black');
+});
