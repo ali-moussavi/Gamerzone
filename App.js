@@ -8,10 +8,10 @@ export const createProductCard = (productObj, locationofHTML = '') => {
 			<img src="${locationofHTML}${productObj.imageurl}" style="width: 100%;height:auto; border-radius: 5px 15px;" alt="">
 		</div>
 	</div>
-	<div class="pt-2 mx-auto font-weight-bold product-name" data-toggle="tooltip"
+	<div class="pt-2 mx-auto product-name" data-toggle="tooltip"
 	data-placement="top" title="${productObj.name}"
 		>${productObj.name}</div>
-	<div class="mx-auto py-2" style="color: #364c63; font-size: 1.1em; width: 80%;">Price : ${productObj.price}$
+	<div class="mx-auto py-2" style="color: #2b2a2a; font-size: 1.1em; width: 80%;">Price : ${productObj.price}$
 	</div>
 	<div class="mx-auto text-center">
 		<button type="button" class="btn btn-secondary m-2">More Details</button>
