@@ -106,7 +106,7 @@ nav a {
 
 .backgroundPicture {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url(./images/Header2.jpg);
+		url(./images/Header2-min.jpg);
 	/* background-image: url(./images/Header2.jpg); */
 	background-size: cover;
 	background-repeat: no-repeat;
