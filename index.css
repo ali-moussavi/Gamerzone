@@ -118,7 +118,7 @@
 }
 /* changing primary button color */
 
-.btn-primary,
+/* .btn-primary,
 .btn-primary:link,
 .btn-primary:visited,
 .btn-primary:focus {
@@ -127,13 +127,14 @@
 }
 
 .btn-primary:hover,
-.btn-primary:active {
-	background-color: #e66a2c;
-	border-color: #e66a2c;
-}
+.btn-primary:active .btn-primary:active:focus {
+	background-color: #e66a2c !important;
+	border-color: #e66a2c !important;
+	box-shadow: none !important;
+} */
 
 /* changing secondary button color */
-.btn-secondary,
+/* .btn-secondary,
 .btn-secondary:link,
 .btn-secondary:visited,
 .btn-secondary:focus {
@@ -147,7 +148,7 @@
 	background-color: #e67e22;
 	border-color: #e67e22;
 	color: white;
-}
+} */
 
 html,
 body {
@@ -260,11 +261,11 @@ nav a {
 }
 
 .subscribe-form {
-	border-radius: 4px 0px 0px 4px;
+	border-radius: .2em 0px 0px .6em;
 }
 
 .subscribe-btn {
-	border-radius: 0px 4px 4px 0px;
+	border-radius: 0px .6em .2em 0px;
 }
 
 .socialmedia-icon:hover {
@@ -299,7 +300,7 @@ nav a {
 
 a:hover {
 	text-decoration: none;
-	color: #828181;
+	color: #e67e22;
 }
 /*---Media Queries --*/
 @media (max-width: 992px) {
