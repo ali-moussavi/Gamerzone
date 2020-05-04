@@ -49,3 +49,25 @@ const navToggler = document.getElementById('navToggler');
 navToggler.addEventListener('click', () => {
 	navbar.classList.toggle('bg-black');
 });
+
+// var waypoint = new Waypoint({
+// 	element: document.querySelectorAll('.three-icons'),
+// 	handler: function(direction) {
+// 		console.log(this.element);
+// 	},
+// 	offset: '75%'
+// });
+
+const icons = document.querySelectorAll('.three-icons');
+
+for (let i = 0; i < icons.length; i++) {
+	var waypoint = new Waypoint({
+		element: icons[i],
+		handler: function(direction) {
+			if (direction == 'down') {
+				this.element.classList.add('three-icons-animate');
+			}
+		},
+		offset: '75%'
+	});
+}

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
+body {
+	overflow-x: hidden;
+}
+
 /* @keyframes changeColor {
 	0% {
 		color: #f43345;
@@ -54,6 +58,16 @@
 	}
 }
 
+@keyframes SlideIn {
+	from {
+	}
+
+	to {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
 /* animating header text */
 
 .maintext,
@@ -96,17 +110,6 @@
 	line-height: 90%;
 }
 
-.icon-animation1 {
-	color: #d35400;
-}
-
-.icon-animation2 {
-	color: #d35400;
-}
-.icon-animation3 {
-	color: #d35400;
-}
-
 .three-icons {
 	padding: 20px;
 	width: 220px;
@@ -115,7 +118,40 @@
 	border-radius: 15px 50px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	transform: translateX(100rem);
 }
+
+.three-icons-animate {
+	animation: SlideIn 1s ease-out forwards;
+}
+
+.icon-animation1 {
+	color: #d35400;
+	animation-delay: 0s;
+}
+
+.icon-animation2 {
+	color: #d35400;
+	animation-delay: .5s;
+}
+.icon-animation3 {
+	color: #d35400;
+	animation-delay: 1s;
+}
+
+/* .three-icons:nth-child(1) {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
+.three-icons:nth-child(2) {
+	-webkit-animation-delay: .25s;
+	animation-delay: .25s;
+}
+.three-icons:nth-child(3) {
+	-webkit-animation-delay: .5s;
+	animation-delay: .5s;
+} */
 /* changing primary button color */
 
 /* .btn-primary,
